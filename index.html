@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骨粗鬆症治療フローチャート</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<body>
+    <h1>骨粗鬆症治療フローチャート</h1>
+    <p>骨粗鬆症治療介入すべきか？</p>
+    <p>※骨粗鬆症の予防と治療ガイドライン2015年版に準拠</p>
+    <hr />
+    <div id="main">
+        <div id="question_area">
+            <div id="q1" class="txt_display">脆弱性骨折があるか？（大腿骨近位部骨折もしくは椎体骨折）</div>
+            <div id="q2" class="txt_hide">脆弱性骨折があるか？（大腿骨近位部骨折もしくは椎体骨折以外）</div>
+            <div id="q3" class="txt_hide">YAM80%未満か？</div>
+            <div id="q4" class="txt_hide">YAM70%以下か？</div>
+            <div id="q5" class="txt_hide">FRAX15%以上もしくは大腿骨近位部骨折の家族歴？</div>
+        </div>
+        <div id="result_area" class="txt_hide">
+            <p>骨粗鬆症治療の必要は……</p>
+            <div id="a1" class="txt_hide">
+                <h2>必要</h2>
+                <p>早急な薬物治療導入を要します。</p>
+                <p>患者様に適切な薬剤選択をお願いします。</p>
+                <p>重症度や腎機能、悪性腫瘍既往、心血管イベントの既往もご考慮ください。</p>
+            </div>
+            <div id="a2" class="txt_hide">
+                <h2>経過観察</h2>
+                <p>現状は薬物治療介入不要です。</p>
+                <p>運動や食事、ロコモ予防の指導をお願いします。</p>
+                <p>骨密度は年１回程度を目処にフォローアップをお願いします。</p>
+            </div>
+            <a href="javaScript:OnAgainClick();">もう1回</a>
+        </div>
+        <div id="btn_area" class="txt_display">
+            <a href="javascript:OnYesClick();" id="btn_yes">Yes</a>
+            <a href="javascript:OnNoClick();" id="btn_no">No</a>
+        </div>
+    </div>
+</body>
+<html>
+</body>
+</html>
